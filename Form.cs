@@ -26,6 +26,10 @@ namespace COMMonitor
          */
         private void Form_Load(object sender, EventArgs e)
         {
+            oldPorts = SerialPort.GetPortNames(); // Заносим в глобальную переменную текущий список COM-портов
+            WindowState = FormWindowState.Minimized; // Сворачиваем окно
+            backgroundWorker.RunWorkerAsync(); // Запускаем фоновый поток
+
             Timer timerStatus = new Timer(); // Создаем таймер
             timerStatus.Interval = 100; // Устанавливаем интервал таймера в 100 мс
             timerStatus.Tick += new EventHandler(timerStatus_Tick); // По завершении интервала - новый интервал
@@ -86,6 +90,7 @@ namespace COMMonitor
         private void toolStripMenuItemStop_Click(object sender, EventArgs e)
         {
             backgroundWorker.CancelAsync(); // Останавливаем фоновый поток
+            WindowState = FormWindowState.Normal; // Разворачиваем окно
         }
 
         /*
