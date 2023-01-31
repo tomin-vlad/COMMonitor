@@ -27,6 +27,12 @@ If you have any question regarding to this project, or found a bug in the source
 
 To contribute to the source code, **fork** this repository (`master` branch), realize your ideas, and then **create a new pull request**.
 
+## Semantic Versioning
+
+```
+MAJOR.MINOR.RELEASE.BUILD
+```
+
 ## License
 
 Develop by [Vladislav Tomin](https://github.com/tomin-vlad) and released as an open source software under [MIT license](LICENSE.md).
