@@ -1,38 +1,24 @@
 # COMMonitor
 
-**COM Monitor** is an application for monitoring the status (connected/disconnected) of computer COM ports, based on the `SerialPort` class, built into C# WPF (Windows OS).
+**COM Monitor** - это утилита для мониторинга состояния (подключено/ отключено) COM-портов ПК, основанная на классе SerialPort, встроенном в C# WPF (Windows).
 
 ![Screenshot](https://imgur.com/aiLHgXa.png)
 
-## Downloads
+## Загрузка
+Скачайте в разделе [Releases](https://github.com/tomin-vlad/COMMonitor/releases) на GitHub последнюю версию программы, упакованную в исполняемый EXE-файл "COMMonitor.zip".
 
-Go to [**releases page**](https://github.com/tomin-vlad/COMMonitor/releases) for more details.
-
-## Prerequisites
-
-- [Visual Studio IDE](https://visualstudio.microsoft.com/ru/downloads/) (2019 and above) - development
+## Требования
+- [Visual Studio IDE](https://visualstudio.microsoft.com/ru/downloads/) (2019 или более поздняя) - для разработки
 - [Microsoft .NET Framework 4.7.2 (x86 and x64)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 
-## Features
+## Возможности
 
-- The minimum weight of the executable file is less than 50 KB
-- The ability to add to Windows autorun
-- The simplest interface with start and stop tracking buttons
-- Tracking COM ports in a separate thread - does not slow down the system
-- Showing changes in the list of COM ports using notifications in the tray area
+- Минимальный вес исполняемого файла - менее 50 КБ
+- Возможность добавления в автозапуск Windows
+- Простейший интерфейс с кнопками запуска и остановки отслеживания
+- Отслеживание COM-портов в отдельном потоке - не замедляет работу системы
+- Отображение изменений в списке COM-портов с помощью уведомлений в области трея
 
-## Contributions
+## Лицензия
 
-If you have any question regarding to this project, or found a bug in the source code, feel free to [report it here](https://github.com/tomin-vlad/COMMonitor/issues). All you need to do is [create an issue](https://github.com/tomin-vlad/COMMonitor/issues/new) there.
-
-To contribute to the source code, **fork** this repository (`master` branch), realize your ideas, and then **create a new pull request**.
-
-## Semantic Versioning
-
-```
-MAJOR.MINOR.RELEASE.BUILD
-```
-
-## License
-
-Develop by [Vladislav Tomin](https://github.com/tomin-vlad) and released as an open source software under [MIT license](LICENSE.md).
+Данная программа относится к свободному программному обеспечению и распространяется под лицензией MIT License. Подробную информацию можно найти в файле [LICENSE](LICENSE.md).
